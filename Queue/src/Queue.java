@@ -43,7 +43,10 @@ public class Queue {
         return numbers==null;
     }
     public int peek(){
-        return 0;
+       if(empty()){
+           System.err.println("Stack is empty");
+       }
+       return numbers[numbers.length-1];
     }
     public void clear(){
           numbers = null;
