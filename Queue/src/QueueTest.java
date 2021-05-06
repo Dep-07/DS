@@ -8,6 +8,7 @@ public class QueueTest {
         n.enQueue(500);
         n.enQueue(600);
         n.enQueue(700);
+        n.print();
         n.dQueue();
         n.print();
     }

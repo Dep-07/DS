@@ -27,8 +27,11 @@ public class Queue {
             return;
         }else {
             int[] revers = new int[numbers.length-1];
-            for (int i = 0;i < revers.length;i++) {
-               revers[i]=numbers[i];
+            int v = numbers.length-1;
+            for (int i = revers.length-1; i>=0;i--) {
+               swep = numbers[i+1];
+               revers[i] = swep;
+
             }
             numbers = revers;
 
