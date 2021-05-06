@@ -46,7 +46,7 @@ public class Queue {
         return 0;
     }
     public void clear(){
-
+          numbers = null;
     }
     public void print(){
         if (empty()){
