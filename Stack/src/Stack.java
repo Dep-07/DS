@@ -19,7 +19,6 @@ public class Stack {
     }
     public int peek(){
 
-
     }
     public void clear(){
         num = null;
