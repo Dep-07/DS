@@ -48,6 +48,7 @@ public class Queue {
     public void clear(){
           numbers = null;
     }
+
     public void print(){
         if (empty()){
             System.out.println("[]");
@@ -63,8 +64,13 @@ public class Queue {
     public boolean contains(int number){
         return false;
     }
+
     public int size(){
-        return 0;
+        if(empty()){
+            return 0;
+        }else{
+            return numbers.length;
+        }
     }
 
 
