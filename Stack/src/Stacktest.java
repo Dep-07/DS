@@ -3,6 +3,8 @@ public class Stacktest {
         Stack stack = new Stack();
         stack.empty();
         stack.push(2);
+        stack.push(5);
+
 
     }
 }

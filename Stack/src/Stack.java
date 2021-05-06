@@ -19,7 +19,20 @@ public class Stack {
 
     }
     public void pop(){
-
+        if(numbers == null){
+            System.out.println("Error");
+            return;
+        }else if(numbers.length==1){
+            numbers =null;
+            return;
+        }
+        else{
+            int[] temp = new int[numbers.length-1];
+            for (int i = 0; i < temp.length; i++) {
+                temp[i] =numbers[i];
+            }
+            numbers = temp;
+        }
     }
     public boolean empty(){
         return numbers==null;
@@ -28,10 +41,19 @@ public class Stack {
         return 0;
     }
     public void clear(){
+        numbers=null;
 
     }
     public void print(){
-
+        if (empty()){
+            System.out.println("[]");
+            return;
+        }
+        System.out.print("[");
+        for (int i = numbers.length-1; i >=0 ; i--) {
+            System.out.println(numbers[i] + ",");
+        }
+        System.out.println("\b\b]");
     }
     public boolean contains(int number){
         return false;
