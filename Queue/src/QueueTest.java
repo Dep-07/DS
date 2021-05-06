@@ -11,5 +11,8 @@ public class QueueTest {
         n.print();
         n.dQueue();
         n.print();
+        System.out.println(n.contains(1000));
+        System.out.println(n.peek());
+        System.out.println(n.empty());
     }
 }
