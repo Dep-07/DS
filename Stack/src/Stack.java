@@ -24,6 +24,9 @@ public class Stack {
 
     }
     public void print(){
+        for (int i = 0; i < num.length; i++) {
+            System.out.println(num[i]);
+        }
 
     }
     public  boolean contains(int number){
