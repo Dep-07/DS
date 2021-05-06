@@ -19,6 +19,7 @@ public class Stack {
     }
     public int peek(){
 
+
     }
     public void clear(){
 
@@ -30,6 +31,13 @@ public class Stack {
 
     }
     public  boolean contains(int number){
+        for (int i = 0; i < num.length; i++) {
+            if (number != num[i]) {
+                 return false;
+            }else{
+                return  true;
+            }
+        }
 
     }
 
