@@ -54,12 +54,28 @@ public class Stack {
         }
         System.out.print("[");
         for (int i = numbers.length-1; i >=0 ; i--) {
-            System.out.println(numbers[i] + ",");
+            System.out.print(numbers[i] + ",");
         }
         System.out.println("\b\b]");
     }
     public boolean contains(int number){
-        return false;
+        if(empty()){
+            return false;
+        }
+            for (int i = 0; i <numbers.length ; i++) {
+                if(number==numbers[i]){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+    public int size(){
+        if(empty()){
+            return 0;
+        }else{
+            return numbers.length;
+        }
     }
 
 }
