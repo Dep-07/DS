@@ -22,7 +22,7 @@ public class Stack {
 
     }
     public void clear(){
-
+        num = null;
     }
     public void print(){
         for (int i = 0; i < num.length; i++) {
