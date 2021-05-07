@@ -91,5 +91,12 @@ class Queue1 {
 }
 public class Deque extends Queue1{
 
+    public void dequeueFront(){
+
+    }
+
+    public void enQueueRear(){
+
+    }
 
 }

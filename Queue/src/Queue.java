@@ -1,4 +1,4 @@
-public class Queuegit {
+public class Queue {
     
     
     private int[] numbers;
