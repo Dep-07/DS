@@ -112,7 +112,10 @@ public class Deque extends Queue1{
            if(numbers == null){
                numbers = new int[1];
                numbers[0] = number;
-           }g
+           }else{
+               int[] temp = new int[numbers.length -1];
+
+           }
 
     }
 
