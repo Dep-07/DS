@@ -1,5 +1,5 @@
 class Queue1 {
-    private int[] numbers;
+    int[] numbers;
 
     int swep;
 
@@ -92,7 +92,20 @@ class Queue1 {
 public class Deque extends Queue1{
 
     public void dequeueFront(){
-
+        if(numbers == null){
+            System.out.println("Error");
+            return;
+        }else if(numbers.length==1){
+            numbers =null;
+            return;
+        }
+        else{
+            int[] temp = new int[numbers.length-1];
+            for (int i = 0; i < temp.length; i++) {
+                temp[i] =numbers[i];
+            }
+            numbers = temp;
+        }
     }
 
     public void enQueueRear(){
