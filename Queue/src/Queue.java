@@ -44,7 +44,7 @@ public class Queue {
     }
     public int peek(){
        if(empty()){
-           System.err.println("Stack is empty");
+           throw new RuntimeException("Queue is empty");
        }
        return numbers[numbers.length-1];
     }

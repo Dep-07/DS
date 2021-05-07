@@ -1,13 +1,13 @@
 public class QueueTest {
     public static void main(String[] args) {
         Queue n = new Queue();
-        n.enQueue(100);
-        n.enQueue(200);
-        n.enQueue(300);
-        n.enQueue(400);
-        n.enQueue(500);
-        n.enQueue(600);
-        n.enQueue(700);
+        n.enQueue(5);
+        n.enQueue(10);
+        n.enQueue(15);
+        n.enQueue(20);
+        n.enQueue(25);
+        n.enQueue(30);
+        n.enQueue(35);
         n.print();
         n.dQueue();
         n.print();
