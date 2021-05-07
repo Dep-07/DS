@@ -108,7 +108,11 @@ public class Deque extends Queue1{
         }
     }
 
-    public void enQueueRear(){
+    public void enQueueRear(int number){
+           if(numbers == null){
+               numbers = new int[1];
+               numbers[0] = number;
+           }g
 
     }
 
