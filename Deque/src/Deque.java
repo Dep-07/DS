@@ -1,5 +1,3 @@
-
-
 class Queue1 {
     private int[] numbers;
 
@@ -91,6 +89,7 @@ class Queue1 {
 
 
 }
-public class Deque extends Queue{
+public class Deque extends Queue1{
+
 
 }
